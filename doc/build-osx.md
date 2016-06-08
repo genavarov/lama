@@ -67,7 +67,7 @@ After exiting, you'll get a warning that the install is keg-only, which means it
 
 1. Clone the GitHub tree to get the source code and go into the directory.
 
-        git clone https://github.com/genavarov/litecoin.git
+        git clone https://github.com/genavarov/lamacoin.git
         cd litecoin
 
 2.  Build litecoind:
