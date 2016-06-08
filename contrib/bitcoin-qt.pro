@@ -19,3 +19,6 @@ FORMS += \
 
 RESOURCES += \
     ../src/qt/bitcoin.qrc
+
+DISTFILES += \
+    ../src/qt/locale/bitcoin_ru.ts
