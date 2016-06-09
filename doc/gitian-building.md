@@ -1,9 +1,9 @@
 Gitian building
 ================
 
-*Setup instructions for a Gitian build of Litecoin using a Debian VM or physical system.*
+*Setup instructions for a Gitian build of Lamacoin using a Debian VM or physical system.*
 
-Gitian is the deterministic build process that is used to build the Litecoin
+Gitian is the deterministic build process that is used to build the Lamacoin
 Core executables. It provides a way to be reasonably sure that the
 executables are really built from source on GitHub. It also makes sure that
 the same, tested dependencies are used and statically built into the executable.
@@ -26,7 +26,7 @@ Table of Contents
 - [Installing Gitian](#installing-gitian)
 - [Setting up Gitian images](#setting-up-gitian-images)
 - [Getting and building the inputs](#getting-and-building-the-inputs)
-- [Building Litecoin](#building-litecoin)
+- [Building Lamacoin](#building-litecoin)
 - [Building an alternative repository](#building-an-alternative-repository)
 - [Signing externally](#signing-externally)
 - [Uploading signatures](#uploading-signatures)
@@ -315,10 +315,10 @@ under 'Fetch and build inputs' to install sources which require manual intervent
 the next step: 'Seed the Gitian sources cache', which will fetch all necessary source files allowing
 for Gitian to work offline.
 
-Building Litecoin
+Building Lamacoin
 ----------------
 
-To build Litecoin (for Linux, OS X and Windows) just follow the steps under 'perform
+To build Lamacoin (for Linux, OS X and Windows) just follow the steps under 'perform
 Gitian builds' in [doc/release-process.md](release-process.md) in the litecoin repository.
 
 This may take a long time as it also builds the dependencies needed for each descriptor.
@@ -332,7 +332,7 @@ tail -f var/build.log
 
 Output from `gbuild` will look something like
 
-    Initialized empty Git repository in /home/debian/gitian-builder/inputs/litecoin/.git/
+    Initialized empty Git repository in /home/debian/gitian-builder/inputs/lamacoin/.git/
     remote: Reusing existing pack: 35606, done.
     remote: Total 35606 (delta 0), reused 0 (delta 0)
     Receiving objects: 100% (35606/35606), 26.52 MiB | 4.28 MiB/s, done.
@@ -363,11 +363,11 @@ and inputs.
 
 For example:
 ```bash
-URL=https://github.com/user/litecoin.git
+URL=https://github.com/user/lamacoin.git
 COMMIT=2014_03_windows_unicode_path
-./bin/gbuild --commit litecoin=${COMMIT} --url litecoin=${URL} ../litecoin/contrib/gitian-descriptors/gitian-linux.yml
-./bin/gbuild --commit litecoin=${COMMIT} --url litecoin=${URL} ../litecoin/contrib/gitian-descriptors/gitian-win.yml
-./bin/gbuild --commit litecoin=${COMMIT} --url litecoin=${URL} ../litecoin/contrib/gitian-descriptors/gitian-osx.yml
+./bin/gbuild --commit litecoin=${COMMIT} --url litecoin=${URL} ../lamacoin/contrib/gitian-descriptors/gitian-linux.yml
+./bin/gbuild --commit litecoin=${COMMIT} --url litecoin=${URL} ../lamacoin/contrib/gitian-descriptors/gitian-win.yml
+./bin/gbuild --commit litecoin=${COMMIT} --url litecoin=${URL} ../lamacoin/contrib/gitian-descriptors/gitian-osx.yml
 ```
 
 Signing externally
@@ -382,9 +382,9 @@ When you execute `gsign` you will get an error from GPG, which can be ignored. C
 in `gitian.sigs` to your signing machine and do
 
 ```bash
-    gpg --detach-sign ${VERSION}-linux/${SIGNER}/litecoin-build.assert
-    gpg --detach-sign ${VERSION}-win/${SIGNER}/litecoin-build.assert
-    gpg --detach-sign ${VERSION}-osx/${SIGNER}/litecoin-build.assert
+    gpg --detach-sign ${VERSION}-linux/${SIGNER}/lamacoin-build.assert
+    gpg --detach-sign ${VERSION}-win/${SIGNER}/lamacoin-build.assert
+    gpg --detach-sign ${VERSION}-osx/${SIGNER}/lamacoin-build.assert
 ```
 
 This will create the `.sig` files that can be committed together with the `.assert` files to assert your
@@ -394,5 +394,5 @@ Uploading signatures
 ---------------------
 
 After building and signing you can push your signatures (both the `.assert` and `.assert.sig` files) to the
-[litecoin/gitian.sigs](https://github.com/litecoin-project/gitian.sigs.ltc/) repository, or if that's not possible create a pull
+[litecoin/gitian.sigs](https://github.com/lamacoin-project/gitian.sigs.ltc/) repository, or if that's not possible create a pull
 request. 

@@ -1,5 +1,5 @@
 ---
-name: "litecoin-osx-0.10"
+name: "lamacoin-osx-0.10"
 enable_cache: true
 suites:
 - "precise"
@@ -21,7 +21,7 @@ packages:
 reference_datetime: "2016-01-01 00:00:00"
 remotes:
 - "url": "https://github.com/genavarov/lamacoin.git"
-  "dir": "litecoin"
+  "dir": "lamacoin"
 files:
 - "MacOSX10.9.sdk.tar.gz"
 script: |
@@ -120,7 +120,7 @@ script: |
     popd
 
     make deploy
-    ${WRAP_DIR}/dmg dmg Litecoin-Qt.dmg ${OUTDIR}/${DISTNAME}-osx-unsigned.dmg
+    ${WRAP_DIR}/dmg dmg Lamacoin-Qt.dmg ${OUTDIR}/${DISTNAME}-osx-unsigned.dmg
 
     cd installed
     find . -name "lib*.la" -delete

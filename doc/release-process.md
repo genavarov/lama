@@ -28,7 +28,7 @@ Release Process
   
     export SIGNER=(your Gitian key, ie wtogami, coblee, etc)
 	export VERSION=(new version, e.g. 0.8.0)
-	pushd ./litecoin
+	pushd ./lamacoin
 	git checkout v${VERSION}
 	popd
 	pushd ./gitian-builder
@@ -49,22 +49,22 @@ Release Process
 
   By default, Gitian will fetch source files as needed. For offline builds, they can be fetched ahead of time:
 
-	make -C ../litecoin/depends download SOURCES_PATH=`pwd`/cache/common
+	make -C ../lamacoin/depends download SOURCES_PATH=`pwd`/cache/common
 
   Only missing files will be fetched, so this is safe to re-run for each build.
 
-###Build Litecoin Core for Linux, Windows, and OS X:
+###Build Lamacoin Core for Linux, Windows, and OS X:
 
-	./bin/gbuild --commit litecoin=v${VERSION} ../litecoin/contrib/gitian-descriptors/gitian-linux.yml
-	./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs.ltc/ ../litecoin/contrib/gitian-descriptors/gitian-linux.yml
-	mv build/out/litecoin-*.tar.gz build/out/src/litecoin-*.tar.gz ../
-	./bin/gbuild --commit litecoin=v${VERSION} ../litecoin/contrib/gitian-descriptors/gitian-win.yml
-	./bin/gsign --signer $SIGNER --release ${VERSION}-win --destination ../gitian.sigs.ltc/ ../litecoin/contrib/gitian-descriptors/gitian-win.yml
-	mv build/out/litecoin-*.zip build/out/litecoin-*.exe ../
-	./bin/gbuild --commit litecoin=v${VERSION} ../litecoin/contrib/gitian-descriptors/gitian-osx.yml
-	./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs.ltc/ ../litecoin/contrib/gitian-descriptors/gitian-osx.yml
-	mv build/out/litecoin-*-unsigned.tar.gz inputs/litecoin-osx-unsigned.tar.gz
-	mv build/out/litecoin-*.tar.gz build/out/litecoin-*.dmg ../
+	./bin/gbuild --commit lamacoin=v${VERSION} ../lamacoin/contrib/gitian-descriptors/gitian-linux.yml
+	./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs.ltc/ ../lamacoin/contrib/gitian-descriptors/gitian-linux.yml
+	mv build/out/lamacoin-*.tar.gz build/out/src/lamacoin-*.tar.gz ../
+	./bin/gbuild --commit lamacoin=v${VERSION} ../lamacoin/contrib/gitian-descriptors/gitian-win.yml
+	./bin/gsign --signer $SIGNER --release ${VERSION}-win --destination ../gitian.sigs.ltc/ ../lamacoin/contrib/gitian-descriptors/gitian-win.yml
+	mv build/out/lamacoin-*.zip build/out/lamacoin-*.exe ../
+	./bin/gbuild --commit lamacoin=v${VERSION} ../lamacoin/contrib/gitian-descriptors/gitian-osx.yml
+	./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs.ltc/ ../lamacoin/contrib/gitian-descriptors/gitian-osx.yml
+	mv build/out/lamacoin-*-unsigned.tar.gz inputs/lamacoin-osx-unsigned.tar.gz
+	mv build/out/lamacoin-*.tar.gz build/out/lamacoin-*.dmg ../
 	popd
   Build output expected:
 
@@ -95,9 +95,9 @@ Commit your signature to gitian.sigs:
 	pushd ./gitian-builder
 	# Fetch the signature as instructed by Warren/Coblee
 	cp signature.tar.gz inputs/
-	./bin/gbuild -i ../litecoin/contrib/gitian-descriptors/gitian-osx-signer.yml
-	./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../litecoin/contrib/gitian-descriptors/gitian-osx-signer.yml
-	mv build/out/litecoin-osx-signed.dmg ../litecoin-${VERSION}-osx.dmg
+	./bin/gbuild -i ../lamacoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+	./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../lamacoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+	mv build/out/lamacoin-osx-signed.dmg ../lamacoin-${VERSION}-osx.dmg
 	popd
 
 Commit your signature for the signed OS X binary:
@@ -130,13 +130,13 @@ rm SHA256SUMS
 
 - Announce the release:
 
-  - Release sticky on litecointalk: https://litecointalk.org/index.php?board=1.0
+  - Release sticky on litecointalk: https://lamacointalk.org/index.php?board=1.0
 
   - litecoin-development mailing list
 
   - Update title of #litecoin on Freenode IRC
 
-  - Optionally reddit /r/litecoin, ... but this will usually sort out itself
+  - Optionally reddit /r/lamacoin, ... but this will usually sort out itself
 
 - Add release notes for the new version to the directory `doc/release-notes` in git master
 

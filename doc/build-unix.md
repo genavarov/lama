@@ -1,6 +1,6 @@
 UNIX BUILD NOTES
 ====================
-Some notes on how to build Litecoin in Unix. 
+Some notes on how to build Lamacoin in Unix. 
 
 Note
 ---------------------
@@ -22,7 +22,7 @@ make
 make install # optional
 ```
 
-This will build litecoin-qt as well if the dependencies are met.
+This will build lamacoin-qt as well if the dependencies are met.
 
 Dependencies
 ---------------------
@@ -50,7 +50,7 @@ System requirements
 --------------------
 
 C++ compilers are memory-hungry. It is recommended to have at least 1 GB of
-memory available when compiling Litecoin Core. With 512MB of memory or less
+memory available when compiling Lamacoin Core. With 512MB of memory or less
 compilation will take much longer due to swap thrashing.
 
 Dependency Build Instructions: Ubuntu & Debian
@@ -94,7 +94,7 @@ Optional:
 Dependencies for the GUI: Ubuntu & Debian
 -----------------------------------------
 
-If you want to build Litecoin-Qt, make sure that the required packages for Qt development
+If you want to build Lamacoin-Qt, make sure that the required packages for Qt development
 are installed. Either Qt 4 or Qt 5 are necessary to build the GUI.
 If both Qt 4 and Qt 5 are installed, Qt 4 will be used. Pass `--with-gui=qt5` to configure to choose Qt5.
 To build without GUI pass `--without-gui`.
@@ -111,7 +111,7 @@ libqrencode (optional) can be installed with:
 
     sudo apt-get install libqrencode-dev
 
-Once these are installed, they will be found by configure and a litecoin-qt executable will be
+Once these are installed, they will be found by configure and a lamacoin-qt executable will be
 built by default.
 
 Notes
@@ -163,7 +163,7 @@ cd db-4.8.30.NC/build_unix/
 ../dist/configure --enable-cxx --disable-shared --with-pic --prefix=$BDB_PREFIX
 make install
 
-# Configure Litecoin Core to use our own-built instance of BDB
+# Configure Lamacoin Core to use our own-built instance of BDB
 cd $LITECOIN_ROOT
 ./configure (other args...) LDFLAGS="-L${BDB_PREFIX}/lib/" CPPFLAGS="-I${BDB_PREFIX}/include/"
 ```
@@ -205,7 +205,7 @@ Hardening enables the following features:
 
     To test that you have built PIE executable, install scanelf, part of paxutils, and use:
 
-    	scanelf -e ./litecoin
+    	scanelf -e ./lamacoin
 
     The output should contain:
      TYPE
@@ -219,7 +219,7 @@ Hardening enables the following features:
     executable without the non-executable stack protection.
 
     To verify that the stack is non-executable after compiling use:
-    `scanelf -e ./litecoin`
+    `scanelf -e ./lamacoin`
 
     the output should contain:
 	STK/REL/PTL

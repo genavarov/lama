@@ -35,7 +35,7 @@ std::string HelpMessageCli()
     strUsage += "  -rpcuser=<user>        " + _("Username for JSON-RPC connections") + "\n";
     strUsage += "  -rpcpassword=<pw>      " + _("Password for JSON-RPC connections") + "\n";
 
-    strUsage += "\n" + _("SSL options: (see the Litecoin Wiki for SSL setup instructions)") + "\n";
+    strUsage += "\n" + _("SSL options: (see the Lamacoin Wiki for SSL setup instructions)") + "\n";
     strUsage += "  -rpcssl                " + _("Use OpenSSL (https) for JSON-RPC connections") + "\n";
 
     return strUsage;
@@ -70,7 +70,7 @@ static bool AppInitRPC(int argc, char* argv[])
         std::string strUsage = _("Litcoin Core RPC client version") + " " + FormatFullVersion() + "\n";
         if (!mapArgs.count("-version")) {
             strUsage += "\n" + _("Usage:") + "\n" +
-                  "  litecoin-cli [options] <command> [params]  " + _("Send command to Litecoin Core") + "\n" +
+                  "  litecoin-cli [options] <command> [params]  " + _("Send command to Lamacoin Core") + "\n" +
                   "  litecoin-cli [options] help                " + _("List commands") + "\n" +
                   "  litecoin-cli [options] help <command>      " + _("Get help for a command") + "\n";
 
