@@ -188,8 +188,8 @@
         <translation>Zadajte nové heslo k peňaženke.&lt;br/&gt;Prosím použite heslo s dĺžkou aspoň &lt;b&gt;10 alebo viac náhodných znakov&lt;/b&gt;, alebo &lt;b&gt;8 alebo viac slov&lt;/b&gt;.</translation>
     </message>
     <message>
-        <source>Lamacoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your litecoins from being stolen by malware infecting your computer.</source>
-        <translation>Lamacoin sa teraz ukončí pre dokončenie procesu šifrovania. Pamätaj že šifrovanie peňaženky Ťa nemôže úplne ochrániť pred kráďežou litecoinov pomocou škodlivého software.</translation>
+        <source>Lamacoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your lamacoins from being stolen by malware infecting your computer.</source>
+        <translation>Lamacoin sa teraz ukončí pre dokončenie procesu šifrovania. Pamätaj že šifrovanie peňaženky Ťa nemôže úplne ochrániť pred kráďežou lamacoinov pomocou škodlivého software.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -308,11 +308,11 @@
     </message>
     <message>
         <source>Send coins to a Lamacoin address</source>
-        <translation>Poslať litecoins na adresu</translation>
+        <translation>Poslať lamacoins na adresu</translation>
     </message>
     <message>
         <source>Modify configuration options for Lamacoin</source>
-        <translation>Upraviť možnosti nastavenia pre litecoin</translation>
+        <translation>Upraviť možnosti nastavenia pre lamacoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -395,8 +395,8 @@
         <translation>Jadro Lamacoin</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and litecoin: URIs)</source>
-        <translation>Vyžiadať platbu (vygeneruje QR kód a litecoin: URI)</translation>
+        <source>Request payments (generates QR codes and lamacoin: URIs)</source>
+        <translation>Vyžiadať platbu (vygeneruje QR kód a lamacoin: URI)</translation>
     </message>
     <message>
         <source>&amp;About Lamacoin Core</source>
@@ -411,8 +411,8 @@
         <translation>Zobraziť zoznam použitých prijímacích adries a ich popisov</translation>
     </message>
     <message>
-        <source>Open a litecoin: URI or payment request</source>
-        <translation>Otvoriť litecoin URI alebo výzvu k platbe</translation>
+        <source>Open a lamacoin: URI or payment request</source>
+        <translation>Otvoriť lamacoin URI alebo výzvu k platbe</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -788,7 +788,7 @@ Adresa: %4</translation>
     </message>
     <message>
         <source>The entered address "%1" is not a valid Lamacoin address.</source>
-        <translation>Vložená adresa "%1" nieje platnou adresou litecoin.</translation>
+        <translation>Vložená adresa "%1" nieje platnou adresou lamacoin.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -1103,7 +1103,7 @@ Adresa: %4</translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Zvoľte ako deliť litecoin pri zobrazovaní pri platbách a užívateľskom rozhraní.</translation>
+        <translation>Zvoľte ako deliť lamacoin pri zobrazovaní pri platbách a užívateľskom rozhraní.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1256,8 +1256,8 @@ Adresa: %4</translation>
         <translation>Chyba pri vyžiadaní platby</translation>
     </message>
     <message>
-        <source>Cannot start litecoin: click-to-pay handler</source>
-        <translation>Nedá sa spustiť obslužný program litecoin: click-to-pay zaplatiť kliknutím</translation>
+        <source>Cannot start lamacoin: click-to-pay handler</source>
+        <translation>Nedá sa spustiť obslužný program lamacoin: click-to-pay zaplatiť kliknutím</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
@@ -1335,7 +1335,7 @@ Adresa: %4</translation>
     </message>
     <message>
         <source>Enter a Lamacoin address (e.g. %1)</source>
-        <translation>Zadajte litecoin adresu (napr. %1)</translation>
+        <translation>Zadajte lamacoin adresu (napr. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1872,7 +1872,7 @@ Adresa: %4</translation>
         <translation>spolu aspoň</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for litecoin transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for lamacoin transactions than the network can process.</source>
         <translation>Zaplatenie len minimálneho poplatku je v poriadku, pokiaľ existuje menej transakcií ako miesta v blokoch. Uvedomte si však, že ak bude vyšší dopyt po transakciách ako dokáže sieť spracovať, môže byť vaša transakcia odsúvaná a nepotvrdená donekonečna.</translation>
     </message>
     <message>
@@ -1945,7 +1945,7 @@ Adresa: %4</translation>
     </message>
     <message>
         <source>Confirm send coins</source>
-        <translation>Potvrdiť odoslanie litecoins</translation>
+        <translation>Potvrdiť odoslanie lamacoins</translation>
     </message>
     <message>
         <source>%1 to %2</source>
@@ -2103,8 +2103,8 @@ Adresa: %4</translation>
         <translation>Vložte popis pre túto adresu aby sa uložila do zoznamu použitých adries</translation>
     </message>
     <message>
-        <source>A message that was attached to the litecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Lamacoin network.</source>
-        <translation>Správa ktorá bola pripojená k litecoin: URI a ktorá bude uložená s transakcou pre Vaše potreby. Poznámka: Táto správa nebude poslaná cez sieť Lamacoin.</translation>
+        <source>A message that was attached to the lamacoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Lamacoin network.</source>
+        <translation>Správa ktorá bola pripojená k lamacoin: URI a ktorá bude uložená s transakcou pre Vaše potreby. Poznámka: Táto správa nebude poslaná cez sieť Lamacoin.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -2803,7 +2803,7 @@ Adresa: %4</translation>
     </message>
     <message>
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
-        <translation>Toto je pred-testovacia verzia - použitie je na vlastné riziko - nepoužívajte na tvorbu litecoin ani obchodovanie.</translation>
+        <translation>Toto je pred-testovacia verzia - použitie je na vlastné riziko - nepoužívajte na tvorbu lamacoin ani obchodovanie.</translation>
     </message>
     <message>
         <source>Unable to bind to %s on this computer. Lamacoin Core is probably already running.</source>

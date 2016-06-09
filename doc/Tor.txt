@@ -10,7 +10,7 @@ https://www.torproject.org/docs/faq.html.en#TBBSocksPort for how to properly
 configure Tor.
 
 
-1. Run litecoin behind a Tor proxy
+1. Run lamacoin behind a Tor proxy
 ---------------------------------
 
 The first step is running Lamacoin behind a Tor proxy. This will already make all
@@ -42,7 +42,7 @@ In a typical situation, this suffices to run behind a Tor proxy:
   ./lamacoind -proxy=127.0.0.1:9050
 
 
-2. Run a litecoin hidden server
+2. Run a lamacoin hidden server
 ------------------------------
 
 If you configure your Tor system accordingly, it is possible to make your node also
@@ -53,9 +53,9 @@ config file):
   HiddenServicePort 9333 127.0.0.1:9333
 
 The directory can be different of course, but (both) port numbers should be equal to
-your litecoind's P2P listen port (9333 by default).
+your lamacoind's P2P listen port (9333 by default).
 
--externalip=X   You can tell litecoin about its publicly reachable address using
+-externalip=X   You can tell lamacoin about its publicly reachable address using
                 this option, and this can be a .onion address. Given the above
                 configuration, you can find your onion address in
                 /var/lib/tor/lamacoin-service/hostname. Onion addresses are given

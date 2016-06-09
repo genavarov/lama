@@ -184,7 +184,7 @@
         <translation>Vnesite novo geslo. Prosimo, da uporabite geslo sestavljeno iz &lt;b&gt;deset ali več&lt;/b&gt; naključnih znakov, ali &lt;b&gt;osem ali več&lt;/b&gt; besed.</translation>
     </message>
     <message>
-        <source>Lamacoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your litecoins from being stolen by malware infecting your computer.</source>
+        <source>Lamacoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your lamacoins from being stolen by malware infecting your computer.</source>
         <translation>Program se bo zaprl, da dokonča proces šifriranja. Zapomnite si, da šifriranje ne more popolnoma zaščititi vašo denarnico pred krajami in zlonamernimi programi, ki bi lahko bili nameščeni na vašem računalniku.</translation>
     </message>
     <message>
@@ -387,8 +387,8 @@
         <translation>Lamacoin Core</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and litecoin: URIs)</source>
-        <translation>Ustvarjanje zahtevka za plačilo (izdelava QR kode in litecoin: URI naslova)</translation>
+        <source>Request payments (generates QR codes and lamacoin: URIs)</source>
+        <translation>Ustvarjanje zahtevka za plačilo (izdelava QR kode in lamacoin: URI naslova)</translation>
     </message>
     <message>
         <source>&amp;About Lamacoin Core</source>
@@ -403,7 +403,7 @@
         <translation>Prikaži seznam uporabljenih sprejemnih naslovov in oznak</translation>
     </message>
     <message>
-        <source>Open a litecoin: URI or payment request</source>
+        <source>Open a lamacoin: URI or payment request</source>
         <translation>Odpri Lamacoin: URI ali zahteva o plačilu</translation>
     </message>
     <message>
@@ -416,7 +416,7 @@
     </message>
     <message numerus="yes">
         <source>%n active connection(s) to Lamacoin network</source>
-        <translation><numerusform>%n aktivna povezava v litecoin omrežje</numerusform><numerusform>%n aktivni povezavi v litecoin omrežje</numerusform><numerusform>%n aktivnih povezav v litecoin omrežje</numerusform><numerusform>%n aktivnih povezav v litecoin omrežje</numerusform></translation>
+        <translation><numerusform>%n aktivna povezava v lamacoin omrežje</numerusform><numerusform>%n aktivni povezavi v lamacoin omrežje</numerusform><numerusform>%n aktivnih povezav v lamacoin omrežje</numerusform><numerusform>%n aktivnih povezav v lamacoin omrežje</numerusform></translation>
     </message>
     <message>
         <source>No block source available...</source>
@@ -874,7 +874,7 @@ Naslov: %4
     </message>
     <message>
         <source>Lamacoin Core will download and store a copy of the Lamacoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Program bo prenesel in shranil kopijo litecoin verige blokov. V izbrano mapo bo shranjenih vsaj %1 GB podatkov, ta količina bo sčasoma še naraščala. Denarnica bo prav tako shranjena v to mapo.</translation>
+        <translation>Program bo prenesel in shranil kopijo lamacoin verige blokov. V izbrano mapo bo shranjenih vsaj %1 GB podatkov, ta količina bo sčasoma še naraščala. Denarnica bo prav tako shranjena v to mapo.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1225,8 +1225,8 @@ Naslov: %4
         <translation>Napaka pri zahtevi plačila</translation>
     </message>
     <message>
-        <source>Cannot start litecoin: click-to-pay handler</source>
-        <translation>Ni mogoče zagnati upravitelja plačil na klik tipa litecoin:.</translation>
+        <source>Cannot start lamacoin: click-to-pay handler</source>
+        <translation>Ni mogoče zagnati upravitelja plačil na klik tipa lamacoin:.</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
@@ -1825,7 +1825,7 @@ Naslov: %4
         <translation>skupno vsaj</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for litecoin transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for lamacoin transactions than the network can process.</source>
         <translation>Dokler bo v blokih še dovolj prostora za vse nastajajoče transakcije, je dovolj tudi plačilo samo minimalne provizije. Ko pa se bo količina vseh transakcij povečala do meja zmogljivosti omrežja, se lahko zgodi, da vaša transakcija brez večje provizije nikoli ne bo potrjena.</translation>
     </message>
     <message>
@@ -2040,8 +2040,8 @@ Naslov: %4
         <translation>Vnesite oznako za ta naslov, ki bo shranjena v seznam uporabljenih naslovov</translation>
     </message>
     <message>
-        <source>A message that was attached to the litecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Lamacoin network.</source>
-        <translation>Sporočilo, ki ste ga pripeli na URI litecoin: in bo shranjeno skupaj s podatki o transakciji. Opomba: Sporočilo ne bo poslano preko omrežja Lamacoin.</translation>
+        <source>A message that was attached to the lamacoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Lamacoin network.</source>
+        <translation>Sporočilo, ki ste ga pripeli na URI lamacoin: in bo shranjeno skupaj s podatki o transakciji. Opomba: Sporočilo ne bo poslano preko omrežja Lamacoin.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2720,7 +2720,7 @@ Naslov: %4
     </message>
     <message>
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
-        <translation>To je preizkusna verzija - uporaba na lastno odgovornost - ne uporabljajte je za rudarjenje litecoinov ali za trgovske aplikacije</translation>
+        <translation>To je preizkusna verzija - uporaba na lastno odgovornost - ne uporabljajte je za rudarjenje lamacoinov ali za trgovske aplikacije</translation>
     </message>
     <message>
         <source>Unable to bind to %s on this computer. Lamacoin Core is probably already running.</source>

@@ -11,7 +11,7 @@ the same, tested dependencies are used and statically built into the executable.
 Multiple developers build the source code by following a specific descriptor
 ("recipe"), cryptographically sign the result, and upload the resulting signature.
 These results are compared and only if they match, the build is accepted and uploaded
-to litecoin.org.
+to lamacoin.org.
 
 More independent Gitian builders are needed, which is why I wrote this
 guide. It is preferred to follow these steps yourself instead of using someone else's
@@ -26,7 +26,7 @@ Table of Contents
 - [Installing Gitian](#installing-gitian)
 - [Setting up Gitian images](#setting-up-gitian-images)
 - [Getting and building the inputs](#getting-and-building-the-inputs)
-- [Building Lamacoin](#building-litecoin)
+- [Building Lamacoin](#building-lamacoin)
 - [Building an alternative repository](#building-an-alternative-repository)
 - [Signing externally](#signing-externally)
 - [Uploading signatures](#uploading-signatures)
@@ -277,12 +277,12 @@ cd ..
 
 **Note**: When sudo asks for a password, enter the password for the user *debian* not for *root*.
 
-Clone the git repositories for litecoin and Gitian and then checkout the litecoin version that you want to build.
+Clone the git repositories for lamacoin and Gitian and then checkout the lamacoin version that you want to build.
 
 ```bash
 git clone https://github.com/devrandom/gitian-builder.git
 git clone https://github.com/genavarov/lamacoin.git
-cd litecoin
+cd lamacoin
 git checkout v${VERSION}
 cd ..
 ```
@@ -310,7 +310,7 @@ There will be a lot of warnings printed during build of the images. These can be
 Getting and building the inputs
 --------------------------------
 
-Follow the instructions in [doc/release-process.md](release-process.md) in the litecoin repository
+Follow the instructions in [doc/release-process.md](release-process.md) in the lamacoin repository
 under 'Fetch and build inputs' to install sources which require manual intervention. Also follow
 the next step: 'Seed the Gitian sources cache', which will fetch all necessary source files allowing
 for Gitian to work offline.
@@ -319,7 +319,7 @@ Building Lamacoin
 ----------------
 
 To build Lamacoin (for Linux, OS X and Windows) just follow the steps under 'perform
-Gitian builds' in [doc/release-process.md](release-process.md) in the litecoin repository.
+Gitian builds' in [doc/release-process.md](release-process.md) in the lamacoin repository.
 
 This may take a long time as it also builds the dependencies needed for each descriptor.
 These dependencies will be cached after a successful build to avoid rebuilding them when possible.
@@ -365,9 +365,9 @@ For example:
 ```bash
 URL=https://github.com/user/lamacoin.git
 COMMIT=2014_03_windows_unicode_path
-./bin/gbuild --commit litecoin=${COMMIT} --url litecoin=${URL} ../lamacoin/contrib/gitian-descriptors/gitian-linux.yml
-./bin/gbuild --commit litecoin=${COMMIT} --url litecoin=${URL} ../lamacoin/contrib/gitian-descriptors/gitian-win.yml
-./bin/gbuild --commit litecoin=${COMMIT} --url litecoin=${URL} ../lamacoin/contrib/gitian-descriptors/gitian-osx.yml
+./bin/gbuild --commit lamacoin=${COMMIT} --url lamacoin=${URL} ../lamacoin/contrib/gitian-descriptors/gitian-linux.yml
+./bin/gbuild --commit lamacoin=${COMMIT} --url lamacoin=${URL} ../lamacoin/contrib/gitian-descriptors/gitian-win.yml
+./bin/gbuild --commit lamacoin=${COMMIT} --url lamacoin=${URL} ../lamacoin/contrib/gitian-descriptors/gitian-osx.yml
 ```
 
 Signing externally
@@ -394,5 +394,5 @@ Uploading signatures
 ---------------------
 
 After building and signing you can push your signatures (both the `.assert` and `.assert.sig` files) to the
-[litecoin/gitian.sigs](https://github.com/lamacoin-project/gitian.sigs.ltc/) repository, or if that's not possible create a pull
+[lamacoin/gitian.sigs](https://github.com/lamacoin-project/gitian.sigs.ltc/) repository, or if that's not possible create a pull
 request. 

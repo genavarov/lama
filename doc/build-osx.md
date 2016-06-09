@@ -1,6 +1,6 @@
 Mac OS X Build Instructions and Notes
 ====================================
-This guide will show you how to build litecoind(headless client) for OS X.
+This guide will show you how to build lamacoind(headless client) for OS X.
 
 Notes
 -----
@@ -58,19 +58,19 @@ The rest of these commands are run inside brew interactive mode:
 /private/tmp/berkeley-db4-UGpd0O $ exit
 ```
 
-After exiting, you'll get a warning that the install is keg-only, which means it wasn't symlinked to `/usr/local`.  You don't need it to link it to build litecoin, but if you want to, here's how:
+After exiting, you'll get a warning that the install is keg-only, which means it wasn't symlinked to `/usr/local`.  You don't need it to link it to build lamacoin, but if you want to, here's how:
 
     $ brew link --force berkeley-db4
 
 
-### Building `litecoind`
+### Building `lamacoind`
 
 1. Clone the GitHub tree to get the source code and go into the directory.
 
         git clone https://github.com/genavarov/lamacoin.git
-        cd litecoin
+        cd lamacoin
 
-2.  Build litecoind:
+2.  Build lamacoind:
 
         ./autogen.sh
         ./configure
@@ -80,7 +80,7 @@ After exiting, you'll get a warning that the install is keg-only, which means it
 
         make check
 
-4.  (Optional) You can also install litecoind to your path:
+4.  (Optional) You can also install lamacoind to your path:
 
         make install
 
@@ -102,11 +102,11 @@ Download Qt Creator from http://www.qt.io/download/. Download the "community edi
 
 Creating a release build
 ------------------------
-You can ignore this section if you are building `litecoind` for your own use.
+You can ignore this section if you are building `lamacoind` for your own use.
 
-litecoind/lamacoin-cli binaries are not included in the Lamacoin-Qt.app bundle.
+lamacoind/lamacoin-cli binaries are not included in the Lamacoin-Qt.app bundle.
 
-If you are building `litecoind` or `Lamacoin-Qt` for others, your build machine should be set up
+If you are building `lamacoind` or `Lamacoin-Qt` for others, your build machine should be set up
 as follows for maximum compatibility:
 
 All dependencies should be compiled with these flags:
@@ -127,7 +127,7 @@ directory. We have to first create the RPC configuration file, though.
 Run `./lamacoind` to get the filename where it should be put, or just try these
 commands:
 
-    echo -e "rpcuser=litecoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Lamacoin/lamacoin.conf"
+    echo -e "rpcuser=lamacoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Lamacoin/lamacoin.conf"
     chmod 600 "/Users/${USER}/Library/Application Support/Lamacoin/lamacoin.conf"
 
 The next time you run it, it will start downloading the blockchain, but it won't
@@ -139,6 +139,6 @@ you can monitor its process by looking at the debug.log file, like this:
 Other commands:
 -------
 
-    ./lamacoind -daemon # to start the litecoin daemon.
+    ./lamacoind -daemon # to start the lamacoin daemon.
     ./lamacoin-cli --help  # for a list of command-line options.
     ./lamacoin-cli help    # When the daemon is running, to get a list of RPC commands

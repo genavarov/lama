@@ -24,7 +24,7 @@ Release Process
 
 ###perform Gitian builds
 
- From a directory containing the litecoin source, gitian-builder and gitian.sigs.ltc
+ From a directory containing the lamacoin source, gitian-builder and gitian.sigs.ltc
   
     export SIGNER=(your Gitian key, ie wtogami, coblee, etc)
 	export VERSION=(new version, e.g. 0.8.0)
@@ -68,10 +68,10 @@ Release Process
 	popd
   Build output expected:
 
-  1. source tarball (litecoin-${VERSION}.tar.gz)
-  2. linux 32-bit and 64-bit binaries dist tarballs (litecoin-${VERSION}-linux[32|64].tar.gz)
-  3. windows 32-bit and 64-bit installers and dist zips (litecoin-${VERSION}-win[32|64]-setup.exe, litecoin-${VERSION}-win[32|64].zip)
-  4. OS X unsigned installer (litecoin-${VERSION}-osx-unsigned.dmg)
+  1. source tarball (lamacoin-${VERSION}.tar.gz)
+  2. linux 32-bit and 64-bit binaries dist tarballs (lamacoin-${VERSION}-linux[32|64].tar.gz)
+  3. windows 32-bit and 64-bit installers and dist zips (lamacoin-${VERSION}-win[32|64]-setup.exe, lamacoin-${VERSION}-win[32|64].zip)
+  4. OS X unsigned installer (lamacoin-${VERSION}-osx-unsigned.dmg)
   5. Gitian signatures (in gitian.sigs/${VERSION}-<linux|win|osx-unsigned>/(your Gitian key)/
 
 ###Next steps:
@@ -126,15 +126,15 @@ rm SHA256SUMS
 ```
 (the digest algorithm is forced to sha256 to avoid confusion of the `Hash:` header that GPG adds with the SHA256 used for the files)
 
-- Update litecoin.org version
+- Update lamacoin.org version
 
 - Announce the release:
 
-  - Release sticky on litecointalk: https://lamacointalk.org/index.php?board=1.0
+  - Release sticky on lamacointalk: https://lamacointalk.org/index.php?board=1.0
 
-  - litecoin-development mailing list
+  - lamacoin-development mailing list
 
-  - Update title of #litecoin on Freenode IRC
+  - Update title of #lamacoin on Freenode IRC
 
   - Optionally reddit /r/lamacoin, ... but this will usually sort out itself
 

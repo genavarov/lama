@@ -45,7 +45,7 @@ static const int MAX_URI_LENGTH = 255;
 #define SPINNER_FRAMES 35
 
 #define QAPP_ORG_NAME "Lamacoin"
-#define QAPP_ORG_DOMAIN "litecoin.org"
+#define QAPP_ORG_DOMAIN "lamacoin.org"
 #define QAPP_APP_NAME_DEFAULT "Lamacoin-Qt"
 #define QAPP_APP_NAME_TESTNET "Lamacoin-Qt-testnet"
 

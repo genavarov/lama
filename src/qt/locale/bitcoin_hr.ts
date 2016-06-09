@@ -188,8 +188,8 @@
         <translation>Unesite novu lozinku za novčanik. &lt;br/&gt;Molimo Vas da koristite zaporku od &lt;b&gt;deset ili više slučajnih znakova&lt;/b&gt;, ili &lt;b&gt;osam ili više riječi.&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>Lamacoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your litecoins from being stolen by malware infecting your computer.</source>
-        <translation>Lamacoin će se sada zatvoriti kako bi dovršio postupak šifriranja. Zapamtite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše litecoine od krađe preko zloćudnog softvera koji bi bio na vašem računalu.</translation>
+        <source>Lamacoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your lamacoins from being stolen by malware infecting your computer.</source>
+        <translation>Lamacoin će se sada zatvoriti kako bi dovršio postupak šifriranja. Zapamtite da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše lamacoine od krađe preko zloćudnog softvera koji bi bio na vašem računalu.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>
@@ -308,11 +308,11 @@
     </message>
     <message>
         <source>Send coins to a Lamacoin address</source>
-        <translation>Slanje novca na litecoin adresu</translation>
+        <translation>Slanje novca na lamacoin adresu</translation>
     </message>
     <message>
         <source>Modify configuration options for Lamacoin</source>
-        <translation>Promijeni postavke konfiguracije za litecoin</translation>
+        <translation>Promijeni postavke konfiguracije za lamacoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -395,8 +395,8 @@
         <translation>Lamacoin Jezgra</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and litecoin: URIs)</source>
-        <translation>Zatraži uplate (Stvara QR kodove i litecoin: URIje)</translation>
+        <source>Request payments (generates QR codes and lamacoin: URIs)</source>
+        <translation>Zatraži uplate (Stvara QR kodove i lamacoin: URIje)</translation>
     </message>
     <message>
         <source>&amp;About Lamacoin Core</source>
@@ -411,8 +411,8 @@
         <translation>Prikaži popis korištenih adresa i oznaka za primanje isplate</translation>
     </message>
     <message>
-        <source>Open a litecoin: URI or payment request</source>
-        <translation>Otvori litecoin: URI adresu ili zahtjev za uplatu</translation>
+        <source>Open a lamacoin: URI or payment request</source>
+        <translation>Otvori lamacoin: URI adresu ili zahtjev za uplatu</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -669,7 +669,7 @@ Adresa:%4
     </message>
     <message>
         <source>The entered address "%1" is not a valid Lamacoin address.</source>
-        <translation>Upisana adresa "%1" nije valjana litecoin adresa.</translation>
+        <translation>Upisana adresa "%1" nije valjana lamacoin adresa.</translation>
     </message>
     <message>
         <source>Could not unlock wallet.</source>
@@ -888,7 +888,7 @@ Adresa:%4
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Izaberite željeni najmanji dio litecoina koji će biti prikazan u sučelju i koji će se koristiti za plaćanje.</translation>
+        <translation>Izaberite željeni najmanji dio lamacoina koji će biti prikazan u sučelju i koji će se koristiti za plaćanje.</translation>
     </message>
     <message>
         <source>&amp;OK</source>

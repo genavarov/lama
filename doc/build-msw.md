@@ -84,6 +84,6 @@ Lamacoin
 -------
 MSYS shell:
 
-	cd \litecoin\src
+	cd \lamacoin\src
 	mingw32-make -f makefile.mingw
-	strip litecoind.exe
+	strip lamacoind.exe

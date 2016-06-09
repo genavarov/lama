@@ -164,8 +164,8 @@
         <translation>Me-encrypt ne ing wallet</translation>
     </message>
     <message>
-        <source>Lamacoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your litecoins from being stolen by malware infecting your computer.</source>
-        <translation>Ing Lamacoin ngeni magsara ya ban ayari ing proseso ning pamag-encrypt. Tandanan yu king pamag-encrypt wallet, ali nala aprotektan king kabuuan reng litecoins yu kareng malware a kasalunsungan atiu kareng computer yu.</translation>
+        <source>Lamacoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your lamacoins from being stolen by malware infecting your computer.</source>
+        <translation>Ing Lamacoin ngeni magsara ya ban ayari ing proseso ning pamag-encrypt. Tandanan yu king pamag-encrypt wallet, ali nala aprotektan king kabuuan reng lamacoins yu kareng malware a kasalunsungan atiu kareng computer yu.</translation>
     </message>
     <message>
         <source>Wallet encryption failed</source>

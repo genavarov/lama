@@ -188,7 +188,7 @@
         <translation>Anna salauslause lompakkoon. &lt;br/&gt;Ole hyvä ja käytä lausetta jossa on &lt;b&gt;kymmenen tai enemmän satunnaista merkkiä&lt;/b&gt; tai &lt;b&gt;kahdeksan tai useampi sanaa&lt;/b&gt;.</translation>
     </message>
     <message>
-        <source>Lamacoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your litecoins from being stolen by malware infecting your computer.</source>
+        <source>Lamacoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your lamacoins from being stolen by malware infecting your computer.</source>
         <translation>Lamacoin sulkeutuu lopettaakseen salausprosessin. Muista, että salattukaan lompakko ei täysin suojaa sitä haittaohjelmien aiheuttamilta varkauksilta.</translation>
     </message>
     <message>
@@ -395,8 +395,8 @@
         <translation>Lamacoin-ydin</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and litecoin: URIs)</source>
-        <translation>Pyydä maksuja (Luo QR koodit ja litecoin: URIt)</translation>
+        <source>Request payments (generates QR codes and lamacoin: URIs)</source>
+        <translation>Pyydä maksuja (Luo QR koodit ja lamacoin: URIt)</translation>
     </message>
     <message>
         <source>&amp;About Lamacoin Core</source>
@@ -411,8 +411,8 @@
         <translation>Näytä vastaanottamiseen käytettyjen osoitteiden ja nimien lista</translation>
     </message>
     <message>
-        <source>Open a litecoin: URI or payment request</source>
-        <translation>Avaa litecoin: URI tai maksupyyntö</translation>
+        <source>Open a lamacoin: URI or payment request</source>
+        <translation>Avaa lamacoin: URI tai maksupyyntö</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -1099,11 +1099,11 @@ Osoite: %4</translation>
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>Yksikkö jona litecoin-määrät näytetään</translation>
+        <translation>Yksikkö jona lamacoin-määrät näytetään</translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Valitse mitä yksikköä käytetään ensisijaisesti litecoin-määrien näyttämiseen.</translation>
+        <translation>Valitse mitä yksikköä käytetään ensisijaisesti lamacoin-määrien näyttämiseen.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1260,8 +1260,8 @@ Osoite: %4</translation>
         <translation>Maksupyyntövirhe</translation>
     </message>
     <message>
-        <source>Cannot start litecoin: click-to-pay handler</source>
-        <translation>Ei voida käynnistää litecoin: klikkaa-maksu käsittelijää</translation>
+        <source>Cannot start lamacoin: click-to-pay handler</source>
+        <translation>Ei voida käynnistää lamacoin: klikkaa-maksu käsittelijää</translation>
     </message>
     <message>
         <source>Payment request fetch URL is invalid: %1</source>
@@ -2103,8 +2103,8 @@ Osoite: %4</translation>
         <translation>Aseta nimi tälle osoitteelle lisätäksesi sen käytettyjen osoitteiden listalle.</translation>
     </message>
     <message>
-        <source>A message that was attached to the litecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Lamacoin network.</source>
-        <translation>Viesti joka liitettiin litecoin: URI:iin tallennetaan rahansiirtoon viitteeksi. Tätä viestiä ei lähetetä Lamacoin-verkkoon.</translation>
+        <source>A message that was attached to the lamacoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Lamacoin network.</source>
+        <translation>Viesti joka liitettiin lamacoin: URI:iin tallennetaan rahansiirtoon viitteeksi. Tätä viestiä ei lähetetä Lamacoin-verkkoon.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>

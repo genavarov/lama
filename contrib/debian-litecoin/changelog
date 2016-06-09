@@ -4,7 +4,7 @@ lamacoin (0.10.4-precise2) precise; urgency=medium
 
  -- Gene Navarov (Gene) <genavarov@gmail.com>  Fri, 3 Jun 2016 22:01:00 +3000
  
-litecoin (0.10.4-precise1) precise; urgency=medium
+lamacoin (0.10.4-precise1) precise; urgency=medium
 
   * New upstream release.
 

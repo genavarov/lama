@@ -575,7 +575,7 @@ void StartRPCThreads()
             _("To use lamacoind, or the -server option to lamacoin-qt, you must set an rpcpassword in the configuration file:\n"
               "%s\n"
               "It is recommended you use the following random password:\n"
-              "rpcuser=litecoinrpc\n"
+              "rpcuser=lamacoinrpc\n"
               "rpcpassword=%s\n"
               "(you do not need to remember this password)\n"
               "The username and password MUST NOT be the same.\n"
@@ -1022,7 +1022,7 @@ json_spirit::Value CRPCTable::execute(const std::string &strMethod, const json_s
 }
 
 std::string HelpExampleCli(string methodname, string args){
-    return "> litecoin-cli " + methodname + " " + args + "\n";
+    return "> lamacoin-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args){

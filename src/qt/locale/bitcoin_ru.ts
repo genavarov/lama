@@ -184,7 +184,7 @@
         <translation>Введите новый пароль бумажника.&lt;br/&gt;Используйте пароль, состоящий из &lt;b&gt;десяти или более случайных символов&lt;/b&gt;, или &lt;b&gt;восьми или более слов&lt;/b&gt;.</translation>
     </message>
     <message>
-        <source>Lamacoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your litecoins from being stolen by malware infecting your computer.</source>
+        <source>Lamacoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your lamacoins from being stolen by malware infecting your computer.</source>
         <translation>Сейчас программа закроется для завершения процесса шифрования. Помните, что шифрование вашего бумажника не может полностью защитить ваши биткойны от кражи с помощью инфицирования вашего компьютера вредоносным ПО.</translation>
     </message>
     <message>
@@ -391,8 +391,8 @@
         <translation>Lamacoin Core</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and litecoin: URIs)</source>
-        <translation>Запросить платежи (создаёт QR-коды и litecoin: ссылки)</translation>
+        <source>Request payments (generates QR codes and lamacoin: URIs)</source>
+        <translation>Запросить платежи (создаёт QR-коды и lamacoin: ссылки)</translation>
     </message>
     <message>
         <source>&amp;About Lamacoin Core</source>
@@ -407,8 +407,8 @@
         <translation>Показать список использованных адресов получения и меток</translation>
     </message>
     <message>
-        <source>Open a litecoin: URI or payment request</source>
-        <translation>Открыть litecoin: URI или запрос платежа</translation>
+        <source>Open a lamacoin: URI or payment request</source>
+        <translation>Открыть lamacoin: URI или запрос платежа</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>

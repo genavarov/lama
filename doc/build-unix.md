@@ -4,7 +4,7 @@ Some notes on how to build Lamacoin in Unix.
 
 Note
 ---------------------
-Always use absolute paths to configure and compile litecoin and the dependencies,
+Always use absolute paths to configure and compile lamacoin and the dependencies,
 for example, when specifying the the path of the dependency:
 
 	../dist/configure --enable-cxx --disable-shared --with-pic --prefix=$BDB_PREFIX
@@ -116,7 +116,7 @@ built by default.
 
 Notes
 -----
-The release is built with GCC and then "strip litecoind" to strip the debug
+The release is built with GCC and then "strip lamacoind" to strip the debug
 symbols, which reduces the executable size by about 90%.
 
 
@@ -147,7 +147,7 @@ It is recommended to use Berkeley DB 4.8. If you have to build it yourself:
 ```bash
 LITECOIN_ROOT=$(pwd)
 
-# Pick some path to install BDB to, here we create a directory within the litecoin directory
+# Pick some path to install BDB to, here we create a directory within the lamacoin directory
 BDB_PREFIX="${LITECOIN_ROOT}/db4"
 mkdir -p $BDB_PREFIX
 
@@ -181,7 +181,7 @@ If you need to build Boost yourself:
 
 Security
 --------
-To help make your litecoin installation more secure by making certain attacks impossible to
+To help make your lamacoin installation more secure by making certain attacks impossible to
 exploit even if a vulnerability is found, binaries are hardened by default.
 This can be disabled with:
 
@@ -213,7 +213,7 @@ Hardening enables the following features:
 
 * Non-executable Stack
     If the stack is executable then trivial stack based buffer overflow exploits are possible if
-    vulnerable buffers are found. By default, litecoin should be built with a non-executable stack
+    vulnerable buffers are found. By default, lamacoin should be built with a non-executable stack
     but if one of the libraries it uses asks for an executable stack or someone makes a mistake
     and uses a compiler extension which requires an executable stack, it will silently build an
     executable without the non-executable stack protection.
@@ -229,7 +229,7 @@ Hardening enables the following features:
 
 Disable-wallet mode
 --------------------
-When the intention is to run only a P2P node without a wallet, litecoin may be compiled in
+When the intention is to run only a P2P node without a wallet, lamacoin may be compiled in
 disable-wallet mode with:
 
     ./configure --disable-wallet

@@ -238,8 +238,8 @@
     </message>
     <message>
         <location line="+80"/>
-        <source>Lamacoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your litecoins from being stolen by malware infecting your computer.</source>
-        <translation>Lamacoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your litecoins from being stolen by malware infecting your computer.</translation>
+        <source>Lamacoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your lamacoins from being stolen by malware infecting your computer.</source>
+        <translation>Lamacoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your lamacoins from being stolen by malware infecting your computer.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -503,7 +503,7 @@
     </message>
     <message>
         <location line="+155"/>
-        <source>Request payments (generates QR codes and litecoin: URIs)</source>
+        <source>Request payments (generates QR codes and lamacoin: URIs)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -523,7 +523,7 @@
     </message>
     <message>
         <location line="+3"/>
-        <source>Open a litecoin: URI or payment request</source>
+        <source>Open a lamacoin: URI or payment request</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1618,7 +1618,7 @@ Address: %4
     </message>
     <message>
         <location line="-400"/>
-        <source>Cannot start litecoin: click-to-pay handler</source>
+        <source>Cannot start lamacoin: click-to-pay handler</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2423,7 +2423,7 @@ Address: %4
     <message>
         <location line="+30"/>
         <location line="+13"/>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for litecoin transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for lamacoin transactions than the network can process.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2728,7 +2728,7 @@ Address: %4
     </message>
     <message>
         <location line="+33"/>
-        <source>A message that was attached to the litecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Lamacoin network.</source>
+        <source>A message that was attached to the lamacoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Lamacoin network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3975,10 +3975,10 @@ Address: %4
     </message>
     <message>
         <location line="+4"/>
-        <source>To use litecoind, or the -server option to Lamacoin, you must set an rpcpassword in the configuration file:
+        <source>To use lamacoind, or the -server option to Lamacoin, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=litecoinrpc
+rpcuser=lamacoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.

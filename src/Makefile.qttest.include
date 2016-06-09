@@ -20,7 +20,7 @@ qt_test_test_lamacoin_qt_SOURCES = \
   qt/test/uritests.cpp \
   $(TEST_QT_H)
 if ENABLE_WALLET
-qt_test_test_litecoin_qt_SOURCES += \
+qt_test_test_lamacoin_qt_SOURCES += \
   qt/test/paymentservertests.cpp
 endif
 
@@ -45,4 +45,4 @@ test_bitcoin_qt_check : qt/test/test_lamacoin-qt$(EXEEXT) FORCE
 	$(MAKE) check-TESTS TESTS=$^
 
 test_bitcoin_qt_clean: FORCE
-	rm -f $(CLEAN_BITCOIN_QT_TEST) $(qt_test_test_litecoin_qt_OBJECTS)
+	rm -f $(CLEAN_BITCOIN_QT_TEST) $(qt_test_test_lamacoin_qt_OBJECTS)

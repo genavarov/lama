@@ -85,7 +85,7 @@ Build configuration options
 UPnP port forwarding
 ---------------------
 
-To use UPnP for port forwarding behind a NAT router (recommended, as more connections overall allow for a faster and more stable litecoin experience), pass the following argument to qmake:
+To use UPnP for port forwarding behind a NAT router (recommended, as more connections overall allow for a faster and more stable lamacoin experience), pass the following argument to qmake:
 
 ::
 

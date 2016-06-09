@@ -4,7 +4,7 @@ Debian
 This directory contains files used to package lamacoind/lamacoin-qt
 for Debian-based Linux systems. If you compile lamacoind/lamacoin-qt yourself, there are some useful files here.
 
-## litecoin: URI support ##
+## lamacoin: URI support ##
 
 
 lamacoin-qt.desktop  (Gnome / Open Desktop)
