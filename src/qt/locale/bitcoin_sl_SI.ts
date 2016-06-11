@@ -160,7 +160,7 @@
         <translation>Potrditev šifriranja denarnice</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LITECOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LAMACOINS&lt;/b&gt;!</source>
         <translation>Opozorilo: V primeru izgube gesla šifrirane denarnice, boste &lt;b&gt;IZGUBILI VSE SVOJE LITECOINE&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -2911,8 +2911,8 @@ Naslov: %4
         <translation>Ko bo prejeto ustrezno opozorilo, ali ko bo opažena zelo dolga razvejitev, izvedi navedeni ukazni niz. (Niz %s bo nadomeščen z vsebino sporočila.)</translation>
     </message>
     <message>
-        <source>Fees (in LTC/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Provizije (v LTC/KiB), ki so manjše od te vrednosti, se pri posredovanju smatrajo za nične (privzeto: %s)</translation>
+        <source>Fees (in LMC/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Provizije (v LMC/KiB), ki so manjše od te vrednosti, se pri posredovanju smatrajo za nične (privzeto: %s)</translation>
     </message>
     <message>
         <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
