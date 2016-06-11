@@ -51,7 +51,7 @@ SplashScreen::SplashScreen(Qt::WindowFlags f, const NetworkStyle *networkStyle) 
     // draw version
     pixPaint.drawText(pixmap.width()-paddingRight+2,paddingTop,versionText);
 
-    // draw copyright stuff
+    // draw copyright stuff Lite
     pixPaint.setFont(QFont(font, 8*fontFactor));
     pixPaint.drawText(pixmap.width()-paddingRightCopyright,paddingTop+paddingCopyrightTop,copyrightText1);
     pixPaint.drawText(pixmap.width()-paddingRightCopyright,paddingTop+paddingCopyrightTop+titleCopyrightVSpace,copyrightText2);
