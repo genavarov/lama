@@ -164,7 +164,7 @@
         <translation>Potvrď zašifrování peněženky</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LAMACOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LITECOINS&lt;/b&gt;!</source>
         <translation>Upozornění: Pokud si zašifruješ peněženku a ztratíš či zapomeneš heslo, &lt;b&gt;PŘIJDEŠ O VŠECHNY LITECOINY&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -3039,12 +3039,12 @@ Adresa: %4
         <translation>Spustit příkaz, když přijde relevantní upozornění nebo když dojde k opravdu dlouhému rozštěpení řetezce bloků (%s se v příkazu nahradí zprávou)</translation>
     </message>
     <message>
-        <source>Fees (in LMC/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Poplatky (v LMC/Kb) menší než tato hodnota jsou považovány za nulové pro účely přeposílání transakcí (výchozí: %s)</translation>
+        <source>Fees (in LTC/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Poplatky (v LTC/Kb) menší než tato hodnota jsou považovány za nulové pro účely přeposílání transakcí (výchozí: %s)</translation>
     </message>
     <message>
-        <source>Fees (in LMC/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Poplatky (v LMC/Kb) menší než tato hodnota jsou považovány za nulové pro účely vytváření transakcí (výchozí: %s)</translation>
+        <source>Fees (in LTC/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Poplatky (v LTC/Kb) menší než tato hodnota jsou považovány za nulové pro účely vytváření transakcí (výchozí: %s)</translation>
     </message>
     <message>
         <source>If paytxfee is not set, include enough fee so transactions begin confirmation on average within n blocks (default: %u)</source>
@@ -3151,8 +3151,8 @@ například: alertnotify=echo %%s | mail -s "Lamacoin Alert" admin@foo.com
         <translation>Chyba: Argument -tor již není podporovaný, použij -onion.</translation>
     </message>
     <message>
-        <source>Fee (in LMC/kB) to add to transactions you send (default: %s)</source>
-        <translation>Poplatek (v LMC/kB), který se přidá ke každé odeslané transakci (výchozí: %s)</translation>
+        <source>Fee (in LTC/kB) to add to transactions you send (default: %s)</source>
+        <translation>Poplatek (v LTC/kB), který se přidá ke každé odeslané transakci (výchozí: %s)</translation>
     </message>
     <message>
         <source>Information</source>
