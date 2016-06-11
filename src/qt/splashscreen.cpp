@@ -35,8 +35,7 @@ SplashScreen::SplashScreen(Qt::WindowFlags f, const NetworkStyle *networkStyle) 
     // define text to place
     QString versionText     = QString("Version %1").arg(QString::fromStdString(FormatFullVersion()));
     QString copyrightText1   = QChar(0xA9)+QString(" 2009-%1 ").arg(COPYRIGHT_YEAR) + QString(tr("The Bitcoin Core developers"));
-    QString copyrightText2   = QChar(0xA9)+QString(" 2011-%1 ").arg(COPYRIGHT_YEAR) + QString(tr("The Litecoin Core developers"));
-    QString copyrightText3   = QChar(0xA9)+QString(" 2016-%1 ").arg(COPYRIGHT_YEAR) + QString(tr("The Lamacoin Core developers"));
+    QString copyrightText2   = QChar(0xA9)+QString(" 2016-%1 ").arg(COPYRIGHT_YEAR) + QString(tr("The Lamacoin Core developers"));
     QString titleAddText    = networkStyle->getTitleAddText();
     QString font            = QApplication::font().toString();
 
@@ -52,11 +51,10 @@ SplashScreen::SplashScreen(Qt::WindowFlags f, const NetworkStyle *networkStyle) 
     // draw version
     pixPaint.drawText(pixmap.width()-paddingRight+2,paddingTop,versionText);
 
-    // draw copyright stuff
+    // draw copyright stuff Lite
     pixPaint.setFont(QFont(font, 8*fontFactor));
     pixPaint.drawText(pixmap.width()-paddingRightCopyright,paddingTop+paddingCopyrightTop,copyrightText1);
     pixPaint.drawText(pixmap.width()-paddingRightCopyright,paddingTop+paddingCopyrightTop+titleCopyrightVSpace,copyrightText2);
-	pixPaint.drawText(pixmap.width()-paddingRightCopyright,paddingTop+paddingCopyrightTop+titleCopyrightVSpace,copyrightText3);
 
     // draw additional text if special network
     if(!titleAddText.isEmpty()) {
