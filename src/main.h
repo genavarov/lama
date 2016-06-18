@@ -207,7 +207,7 @@ bool GetTransaction(const uint256 &hash, CTransaction &tx, uint256 &hashBlock, b
 /** Find the best known block, and make it the tip of the block chain */
 bool ActivateBestChain(CValidationState &state, CBlock *pblock = NULL);
 /** Supsidy on mining */
-CAmount GetProofOfWorkReward(unsigned int nBits);
+CAmount GetProofOfWorkReward(unsigned int nHeight);
 CAmount GetBlockValue(int nHeight, const CAmount& nFees);
 
 /** Create a new block index entry for a given block hash */

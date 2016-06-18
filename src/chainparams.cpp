@@ -56,10 +56,12 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
         boost::assign::map_list_of
         ( 0, uint256("0xd77cb63a40042d73a83142383c7872c123cda7253db1d9c0effc8a029ca857b2"))
 		//( 1, uint256("0x6c33265c5c85807c289982a19591d1093cb7c135b8035acf155019c778edc039"))
+		( 8, uint256("0x8b1a062ac3af6d6711e1a62f633bca62487ed46b393bca893573f00ca62cd56a"))
+		( 16, uint256("0xf9f20eb91a0ea3e5e7196a1fc55d63667aca9c00cf739d2a27a84375fc70a7df"))
+		( 32, uint256("0x22c03da069072d8214d7d5617088605a2645671a7d69e2a8914dc59ee1449c9a"))
 		( 64, uint256("0xa32b7960e35ae2f9ef83a8b7507bc3fffc6959ef27c46ed4ebdbabf9e661375d"))
-		( 100, uint256("0x4bba7300ef1f1a3fadee78640d98b85b9162ec521c8d4223f3e752fcef21aef3"))
 		( 128, uint256("0x172d100cf86135d03da12936d3174b68beba7752bf208ee5eacfd44012cd066e"))
-		( 200, uint256("0xe58f465aa89669092a7b9a15c864bc9327ab3481ba0b3162a702e0a1fb9aeb12"))
+		( 256, uint256("0xa83edd96dff905aab89680cf376d990f442bdc132df9b7d46f07046544f277c5"))
 		( 320, uint256("0xac3f4a4848c822e38eeb4d833b1302d44a91089179a996efbb9ea50336cb3487"))
 		( 256, uint256("0xa83edd96dff905aab89680cf376d990f442bdc132df9b7d46f07046544f277c5"))
 		( 512, uint256("0x01886cc19b158c46472c83829058c6e35f965f18aa5c1df66810f883e6aeb45f"))
@@ -209,16 +211,14 @@ public:
         genesis.nNonce = 114703;
         hashGenesisBlock = genesis.GetHash();
         assert(hashGenesisBlock == uint256("0xd77cb63a40042d73a83142383c7872c123cda7253db1d9c0effc8a029ca857b2"));
-        //assert(genesis.hashMerkleRoot == uint256("0x7a756f67df28090833de8df9c15f36f9637306809443b3065dec5db903210566"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
 		vSeeds.push_back(CDNSSeedData("192.168.1.103", "192.168.1.107"));
 
-		
         base58Prefixes[PUBKEY_ADDRESS] = list_of(48);
         base58Prefixes[SCRIPT_ADDRESS] = list_of(5);
-        base58Prefixes[SECRET_KEY]     = list_of(128);
+        base58Prefixes[SECRET_KEY]     = list_of(176);
         base58Prefixes[EXT_PUBLIC_KEY] = list_of(0x04)(0x88)(0xB2)(0x1E);
         base58Prefixes[EXT_SECRET_KEY] = list_of(0x04)(0x88)(0xAD)(0xE4);
 
