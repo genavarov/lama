@@ -1261,9 +1261,9 @@ CAmount GetProofOfWorkReward(unsigned int nHeight)
 		else if (nHeight < 84001)
 			nSubsidy = 100 * COIN; // 1,680000 coins
 		else if (nHeight < 168001)
-			nSubsidy = 50 * COIN; // 50/2 coins
+			nSubsidy = 50 * COIN; // 50 coins
 		else if (nHeight < 210001)
-			nSubsidy = 50 * COIN; // 50/2 coins
+			nSubsidy = 50 * COIN; // 50 coins
 		else if (nHeight < 420001)
 			nSubsidy = 50 * COIN; // 50/2 coins
 		else if (nHeight < 840001)
