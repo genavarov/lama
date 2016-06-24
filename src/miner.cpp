@@ -435,6 +435,7 @@ void static BitcoinMiner(CWallet *pwallet)
 					//nValue = CAmount GetBalance();
 					CAmount nValue = pwallet->GetBalance();
 					//CAmount nSubsidy = 5000 * COIN; //const
+					string strError;
 					// Check amount
                     if (nValue <= 0)
 					{  strError = "Error: Invalid alowed amount, unable to create new block!";

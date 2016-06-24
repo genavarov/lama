@@ -152,6 +152,7 @@ Value setgenerate(const Array& params, bool fHelp)
     }
 					CAmount nValue = pwalletMain->GetBalance();
 					//CAmount nSubsidy = 5000 * COIN; //const
+					string strError;
 					// Check amount
                     if (nValue <= 0)
 					{  strError = "Error: Invalid alowed amount, unable to create new block!";
