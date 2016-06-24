@@ -431,6 +431,19 @@ void static BitcoinMiner(CWallet *pwallet)
                     if (!fvNodesEmpty && !IsInitialBlockDownload())
                         break;
                     MilliSleep(1000);
+					
+					//nValue = CAmount GetBalance();
+					CAmount nValue = pwallet->GetBalance();
+					//CAmount nSubsidy = 5000 * COIN; //const
+					// Check amount
+                    if (nValue <= 0)
+					{  strError = "Error: Invalid alowed amount, unable to create new block!";
+							LogPrintf("LamacoinMiner : ", strError);						
+                       //throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid alowed amount");
+					   break;
+					   MilliSleep(1200);
+				    }
+					
                 } while (true);
             }
 
