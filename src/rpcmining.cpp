@@ -220,6 +220,7 @@ Value setgenerate(const Array& params, bool fHelp)
 						LogPrintf("Error in LamacoinMiner : Invalid alowed amount on balance, unable to create new block!\n");						
 						throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid alowed amount on balance");
 						//return;
+						fGenerate = false;
 				    }
 					else
 					{
@@ -228,6 +229,7 @@ Value setgenerate(const Array& params, bool fHelp)
 							LogPrintf("Error in LamacoinMiner : Invalid alowed amount on balance, unable to create new block!\n");						
 							throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid alowed amount on balance");
 							//return;
+							fGenerate = false;
 						}
 					}
 				}
