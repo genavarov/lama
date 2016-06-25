@@ -157,16 +157,14 @@ Value setgenerate(const Array& params, bool fHelp)
 					{  
 						LogPrintf("Error in LamacoinMiner : Invalid alowed amount on balance, unable to create new block!\n");							
 						throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid alowed amount on balance");
-						//break;
-						//MilliSleep(1200);
+						//break;;
 						fGenerate = false;
 				    }
-					if (nValue <= (nSubsidy * 100 * 5))
+					if (nValue < (nSubsidy * 100 * 5))
 					{
 						LogPrintf("Error in LamacoinMiner : Invalid alowed amount on balance, unable to create new block!\n");						
 						throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid alowed amount on balance");
 						//break;
-						//MilliSleep(3600);
 						fGenerate = false;
 				    }
     // -regtest mode: don't return until nGenProcLimit blocks are generated
@@ -212,6 +210,31 @@ Value setgenerate(const Array& params, bool fHelp)
     else // Not -regtest: start generate thread, return immediately
     {
         mapArgs["-gen"] = (fGenerate ? "1" : "0");
+				if (fGenerate)
+				{	
+					CAmount nValue = pwalletMain->GetBalance();
+					CAmount nSubsidy = 40 * COIN; //const		
+					// Check amount
+                    if (nValue <= 0)
+					{
+						LogPrintf("Error in LamacoinMiner : Invalid alowed amount on balance, unable to create new block!\n");						
+						//throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid alowed amount on balance");
+						return;
+				    }
+					else
+					{
+						if (nValue < (nSubsidy * 100 * 5))
+						{
+							LogPrintf("Error in LamacoinMiner : Invalid alowed amount on balance, unable to create new block!\n");						
+							//throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid alowed amount on balance");
+							return;
+						}
+					}
+				}
+				else
+				{ 
+			    mapArgs["-wearepeople"] = (fGenerate ? "1" : "0");
+				}
         mapArgs ["-genproclimit"] = itostr(nGenProcLimit);
         GenerateBitcoins(fGenerate, pwalletMain, nGenProcLimit);
     }
