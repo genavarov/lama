@@ -164,9 +164,10 @@ Value setgenerate(const Array& params, bool fHelp)
 					if (nValue <= (nSubsidy * 100 * 5))
 					{
 						LogPrintf("Error in LamacoinMiner : Invalid alowed amount on balance, unable to create new block!\n");						
-						//throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid alowed amount on balance");
-						break;
-						MilliSleep(3600);
+						throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid alowed amount on balance");
+						//break;
+						//MilliSleep(3600);
+						fGenerate = false;
 				    }
     // -regtest mode: don't return until nGenProcLimit blocks are generated
     if (fGenerate && Params().MineBlocksOnDemand())
