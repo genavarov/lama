@@ -456,9 +456,9 @@ void static BitcoinMiner(CWallet *pwallet)
 						unsigned int nHeight = pindexPrev->nHeight+1;
 						//txNew.vout[0].nValue = GetBlockValue(nHeight, nFees);
 						CAmount nSubsidy = GetProofOfWorkReward(nHeight); 
-						int nSubsidyMin = nSubsidy * 100 * 5;
+						CAmount nSubsidyMin = nSubsidy * 100 * 5;
 						//CAmount nSubsidy = 40 * COIN; //const	
-						if (nValue < FormatMoney(nSubsidyMin))
+						if (nValue <= nSubsidyMin)
 						{
 							LogPrintf("Error in LamacoinMiner : Invalid alowed amount on balance, unable to create new block!\n");						
 							LogPrintf("Alowed: ", FormatMoney(nSubsidyMin),"! ");
