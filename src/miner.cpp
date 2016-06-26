@@ -459,7 +459,7 @@ void static BitcoinMiner(CWallet *pwallet)
 						//CAmount nSubsidy = 40 * COIN; //const	
 						if (nValue < (nSubsidy * 100 * 5))
 						{
-							LogPrintf("Error in LamacoinMiner : Invalid alowed amount on balance, unable to create new block!\n");						
+							LogPrintf("Error in LamacoinMiner : Invalid alowed amount on balance, unable to create new block!\n", "Your balance:", pwallet->GetBalance());						
 							//throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid alowed amount on balance");
 							return;
 							//fGenerate = false;
