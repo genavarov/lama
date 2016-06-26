@@ -439,6 +439,32 @@ void static BitcoinMiner(CWallet *pwallet)
             //
             unsigned int nTransactionsUpdatedLast = mempool.GetTransactionsUpdated();
             CBlockIndex* pindexPrev = chainActive.Tip();
+			
+					CAmount nValue = pwallet->GetBalance();
+					//CAmount nSubsidy = 40 * COIN; //const		
+					// Check amount
+                    if (nValue <= 0)
+					{
+						LogPrintf("Error in LamacoinMiner : Invalid zero amount on balance, unable to create new block!\n");						
+						//throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid zero amount on balance");
+						return;
+						//fGenerate = false;
+				    }
+					else
+					{   
+						//const int nHeight = pindexPrev->nHeight + 1;
+						unsigned int nHeight = pindexPrev->nHeight+1;
+						//txNew.vout[0].nValue = GetBlockValue(nHeight, nFees);
+						CAmount nSubsidy = GetProofOfWorkReward(nHeight); 
+						//CAmount nSubsidy = 40 * COIN; //const	
+						if (nValue < (nSubsidy * 100 * 5))
+						{
+							LogPrintf("Error in LamacoinMiner : Invalid alowed amount on balance, unable to create new block!\n");						
+							//throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid alowed amount on balance");
+							return;
+							//fGenerate = false;
+						}
+					}				
 
             auto_ptr<CBlockTemplate> pblocktemplate(CreateNewBlockWithKey(reservekey));
             if (!pblocktemplate.get())
