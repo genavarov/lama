@@ -1274,6 +1274,39 @@ CAmount GetProofOfWorkReward(unsigned int nHeight)
     	return nSubsidy;
 }
 
+// for miner's coin base reward min limit on alowed Balance
+CAmount GetProofOfWorkRewardBalance(unsigned int nHeight)
+{
+        CAmount nSubsidyMin = 40 * COIN;
+		//40*5.76*365 = 2102.4 and + nHeight * 0.02
+		if (nHeight < 2101)
+			nSubsidyMin = 0 * COIN; //  10,500000 coins
+		else if (nHeight < 4201)
+			nSubsidyMin = (nHeight * 0.02 + 33600) * COIN; // 640*5.76*365  1,344000 coins
+		else if (nHeight < 6301)
+			nSubsidyMin = (nHeight * 0.02 + 16800) * COIN; // 320*5.76*365  0,672000 coins
+		else if (nHeight < 8401)
+			nSubsidyMin = (nHeight * 0.02 + 8400) * COIN; // 160*5.76*365  0,336000 coins
+		else if (nHeight < 10501)
+			nSubsidyMin = (nHeight * 0.02 + 4200) * COIN; // 80*5.76*365  0,168000 coins
+		else if (nHeight < 21001)
+			nSubsidyMin = (nHeight * 0.02 + 2100) * COIN; // 40*5.76*365  0,420000 coins
+		else if (nHeight < 42001)
+			nSubsidyMin = (nHeight * 0.02 + 2100) * COIN; // 0,840000 coins
+		else if (nHeight < 84001)
+			nSubsidyMin = (nHeight * 0.02 + 2100) * COIN; // 1,680000 coins
+		else if (nHeight < 210001)
+			nSubsidyMin = (nHeight * 0.02 + 2100) * COIN; // 5,040000 coins
+		else if (nHeight < 420001)
+			nSubsidyMin = (nHeight * 0.02 + 2100) * COIN; // 40/2 = 20 coins
+		else if (nHeight < 840001)
+			nSubsidyMin = (nHeight * 0.02 + 2100) * COIN; // 40/8 = 5 coins
+		else if (nHeight > 840000)
+			nSubsidyMin = 40 * COIN; // 2.50 coins per block
+
+    	return nSubsidyMin;
+}
+
 CAmount GetBlockValue(int nHeight, const CAmount& nFees)
 {
     //CAmount nSubsidy = 50 * COIN;

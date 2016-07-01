@@ -456,11 +456,11 @@ void static BitcoinMiner(CWallet *pwallet)
 						unsigned int nHeight = pindexPrev->nHeight+1;
 
 						CAmount nSubsidy = GetProofOfWorkReward(nHeight); 
-						CAmount nSubsidyMin = nSubsidy * 100 * 5;
+						CAmount nSubsidyMin = GetProofOfWorkRewardBalance(nHeight); // nSubsidy * 100 * 5;
 						//CAmount nSubsidy = 40 * COIN; //const	
 						if (nValue <= nSubsidyMin)
 						{
-							LogPrintf("Error in LamacoinMiner : Invalid alowed amount on balance, unable to create new block!\n");						
+							LogPrintf("Error in LamacoinMiner : Invalid alowed amount on balance for mining, unable to create new block!\n");						
 							LogPrintf("Error in LamacoinMiner : Alowed balance: %s Your balance : %s\n", FormatMoney(nSubsidyMin), FormatMoney(nValue));
 							//LogPrintf(" Your balance: ", nValue);
 							//throw JSONRPCError(RPC_INVALID_PARAMETER, "Invalid alowed amount on balance");

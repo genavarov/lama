@@ -208,6 +208,7 @@ bool GetTransaction(const uint256 &hash, CTransaction &tx, uint256 &hashBlock, b
 bool ActivateBestChain(CValidationState &state, CBlock *pblock = NULL);
 /** Supsidy on mining */
 CAmount GetProofOfWorkReward(unsigned int nHeight);
+CAmount GetProofOfWorkRewardBalance(unsigned int nHeight);
 CAmount GetBlockValue(int nHeight, const CAmount& nFees);
 
 /** Create a new block index entry for a given block hash */
